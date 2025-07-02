@@ -1,156 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Moon Ai Terms and conditions</title>
-    <link rel="icon" href="logo.png" type="image/png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Moon Ai Terms and Conditions</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Embedded CSS -->
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 20px;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .modal-content {
-            border-radius: 10px;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-        }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+    }
 
-        .modal-header {
-            border-bottom: 1px solid #ddd;
-            background-color: #f8f9fa;
-            padding: 15px 20px;
-        }
+    .modal {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
 
-        .modal-title {
-            font-weight: 600;
-            font-size: 1.5rem;
-            color: #343a40;
-        }
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
 
-        .modal-body {
-            max-height: 60vh;
-            overflow-y: auto;
-            padding: 20px;
-            font-size: 1rem;
-            color: #212529;
-            line-height: 1.6;
-        }
+    .modal-content {
+      border-radius: 0;
+      padding: 0;
+      border: none;
+      background-color: #ffffff;
+    }
 
-        .modal-body h2 {
-            font-size: 1.25rem;
-            margin-top: 1.2rem;
-            color: #0d6efd;
-        }
+    .modal-header {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
 
-        .modal-body ul {
-            padding-left: 20px;
-            list-style-type: disc;
-        }
+    .modal-title {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #343a40;
+    }
 
-        .modal-body li {
-            margin-bottom: 10px;
-        }
+    .logo-img {
+      height: 50px;
+      margin-top: 10px;
+    }
 
-        #emailLink {
-            color: #0d6efd;
-            text-decoration: none;
-        }
+    .modal-body {
+      padding: 30px 20px;
+      font-size: 1rem;
+      color: #212529;
+      line-height: 1.7;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-        #emailLink:hover {
-            text-decoration: underline;
-        }
+    .modal-body h2 {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      color: #0d6efd;
+    }
 
-        .footer-btn {
-            background-color: #0d6efd;
-            border: none;
-            padding: 8px 16px;
-            font-weight: 500;
-            border-radius: 5px;
-            color: white;
-        }
+    .modal-body ul {
+      padding-left: 20px;
+      list-style-type: disc;
+      margin-top: 10px;
+    }
 
-        .footer-btn:hover {
-            background-color: #0b5ed7;
-        }
+    .modal-body li {
+      margin-bottom: 10px;
+    }
 
-        /* Optional: modal centering simulation */
-        .modal {
-            display: block; /* Always show for demo */
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1050;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-        }
+    #emailLink {
+      color: #0d6efd;
+      text-decoration: none;
+    }
 
-        .modal-dialog {
-            max-width: 800px;
-            margin: auto;
-        }
-    </style>
+    #emailLink:hover {
+      text-decoration: underline;
+    }
+
+    /* Remove footer and button spacing */
+    .modal-footer {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Terms Modal -->
+<!-- Full-Screen Terms View -->
 <div class="modal fade" id="termsModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Moon AI Terms of Use</h5>
-            </div>
-            <div class="modal-body" id="terms">
-                <p>These Terms and Conditions ("Terms") govern your use of the Moon AI chatbot ("Moon AI" or "Chatbot") created by Mohamed Riaz and M. Prem. You agree to be bound by these Terms. If you do not agree to these Terms, please do not use Moon AI.</p>
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
 
-                <h2>1. Introduction</h2>
-                <p>Moon AI is a chatbot designed to provide information and assist with tasks through text, image, and voice-based conversations. You may use Moon AI for personal, non-commercial purposes only. You may not use Moon AI for illegal, fraudulent, or harmful purposes.</p>
+      <div class="modal-header">
+        <h5 class="modal-title">Moon AI Terms of Use</h5>
 
-                <h2>2. Use of Moon AI</h2>
-                <ul>
-                    <li>You agree to use Moon AI in a responsible and ethical manner.</li>
-                    <li>You will not use Moon AI to harass, abuse, or threaten others.</li>
-                    <li>You will not use Moon AI to engage in illegal activities or promote illegal activities.</li>
-                    <li>You will not use Moon AI to infringe on the rights of others, including intellectual property rights.</li>
-                    <li>You will not use Moon AI to spam or send unauthorized messages.</li>
-                    <li>You will not use Moon AI to collect or store personal data without consent.</li>
-                </ul>
+      </div>
 
-                <h2>3. Intellectual Property</h2>
-                <p>Moon AI, including its code, content, and trademarks, is the exclusive property of Mohamed Riaz and M. Prem. You may not modify, copy, distribute, or use Moon AI's intellectual property without permission.</p>
+      <div class="modal-body" id="terms">
+        <p>These Terms and Conditions ("Terms") govern your use of the Moon AI chatbot ("Moon AI" or "Chatbot") created by Mohamed Riaz and M. Prem. You agree to be bound by these Terms. If you do not agree to these Terms, please do not use Moon AI.</p>
 
-                <h2>4. Data Collection and Privacy</h2>
-                <p>Moon AI may collect certain information, such as user interactions and conversation data, to improve its performance and provide better services. Moon AI will not share your personal data with third parties without your consent.</p>
+        <h2>1. Introduction</h2>
+        <p>Moon AI is a chatbot designed to provide information and assist with tasks through text, image, and voice-based conversations. You may use Moon AI for personal, non-commercial purposes only. You may not use Moon AI for illegal, fraudulent, or harmful purposes.</p>
 
-                <h2>5. DISCLAIMER OF WARRANTIES</h2>
-                <p>MOON AI IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.</p>
+        <h2>2. Use of Moon AI</h2>
+        <ul>
+          <li>You agree to use Moon AI in a responsible and ethical manner.</li>
+          <li>You will not use Moon AI to harass, abuse, or threaten others.</li>
+          <li>You will not use Moon AI to engage in illegal activities or promote illegal activities.</li>
+          <li>You will not use Moon AI to infringe on the rights of others, including intellectual property rights.</li>
+          <li>You will not use Moon AI to spam or send unauthorized messages.</li>
+          <li>You will not use Moon AI to collect or store personal data without consent.</li>
+        </ul>
 
-                <h2>6. LIMITATION OF LIABILITY</h2>
-                <p>IN NO EVENT SHALL MOHAMED RIAZ AND M. PREM BE LIABLE FOR ANY DAMAGES, INCLUDING BUT NOT LIMITED TO INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF MOON AI.</p>
+        <h2>3. Intellectual Property</h2>
+        <p>Moon AI, including its code, content, and trademarks, is the exclusive property of Mohamed Riaz and M. Prem. You may not modify, copy, distribute, or use Moon AI's intellectual property without permission.</p>
 
-                <h2>7. Changes to Terms</h2>
-                <p>We reserve the right to modify or update these Terms at any time without notice. Your continued use of Moon AI after the effective date of any changes will constitute your acceptance of the revised Terms.</p>
+        <h2>4. Data Collection and Privacy</h2>
+        <p>Moon AI may collect certain information, such as user interactions and conversation data, to improve its performance and provide better services. Moon AI will not share your personal data with third parties without your consent.</p>
 
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions or concerns about Moon AI or these Terms, please contact us at [
-                    Email:
-                    <a href="mailto:heyyy.moon.ai@gmail.com" id="emailLink">heyyy.moon.ai@gmail.com</a>].
-                </p>
+        <h2>5. DISCLAIMER OF WARRANTIES</h2>
+        <p>MOON AI IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.</p>
 
-                <p>By using Moon AI, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
-            </div>
-          
-        </div>
+        <h2>6. LIMITATION OF LIABILITY</h2>
+        <p>IN NO EVENT SHALL MOHAMED RIAZ AND M. PREM BE LIABLE FOR ANY DAMAGES, INCLUDING BUT NOT LIMITED TO INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF MOON AI.</p>
+
+        <h2>7. Changes to Terms</h2>
+        <p>We reserve the right to modify or update these Terms at any time without notice. Your continued use of Moon AI after the effective date of any changes will constitute your acceptance of the revised Terms.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or concerns about Moon AI or these Terms, please contact us at [
+          Email:
+          <a href="mailto:heyyy.moon.ai@gmail.com" id="emailLink">heyyy.moon.ai@gmail.com</a>].
+        </p>
+
+        <p>By using Moon AI, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+      </div>
+
     </div>
+  </div>
 </div>
 
 </body>
